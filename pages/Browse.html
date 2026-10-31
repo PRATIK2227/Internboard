@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--{DOCUMENT METADATA}-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore internship opportunities by domain, skills, location and work mode on InternBoard.">
+    <meta name="theme-color" content="#080d1b">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Browse Internships | InternBoard</title>
+
+    <link
+        rel="stylesheet"
+        href="../styles/Browse.css">
+</head>
+
+<body>
+
+    <!--{NAVBAR}-->
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="home.html" class="logo">
+
+                <span class="logo-cap">🎓</span>
+
+                <span>
+                    Intern<span>Board</span>
+                </span>
+
+            </a>
+
+
+            <!--{NAV LINKS}-->
+            <nav class="nav-links" id="primaryNavigation" aria-label="Primary navigation">
+
+                <a href="home.html">
+                    Home
+                </a>
+
+                <a
+                    href="Browse.html"
+                    class="active">
+                    Browse
+                </a>
+
+                <a href="About.html">
+                    About
+                </a>
+
+                <a href="How_It_Works.html">
+                    How It Works
+                </a>
+
+                <a href="Contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primaryNavigation">☰</button>
+
+                <!--{SEARCH}-->
+
+                <button
+                    class="search-btn"
+                    id="searchBtn"
+                    aria-label="Search">
+
+                    <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2">
+
+                        <circle
+                            cx="11"
+                            cy="11"
+                            r="7">
+                        </circle>
+
+                        <line
+                            x1="16.65"
+                            y1="16.65"
+                            x2="21"
+                            y2="21">
+                        </line>
+
+                    </svg>
+
+                </button>
+
+
+                <button
+                    class="login-btn"
+                    id="loginBtn">
+                    Login
+                </button>
+
+
+                <button
+                    class="started-btn"
+                    id="startedBtn">
+                    Get Started
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!--{BROWSE HERO}-->
+    <main>
+
+        <!--{BROWSE HERO}-->
+        <section class="browse-hero">
+
+            <div class="browse-hero-container">
+
+                <div class="browse-hero-content">
+
+                    <div class="hero-badge">
+
+                        <span>⚡</span>
+
+                        Explore Opportunities
+
+                    </div>
+
+
+                    <h1>
+
+                        Find Your
+                        <br>
+
+                        <span>Dream Internship</span>
+
+                    </h1>
+
+
+                    <p>
+
+                        Discover verified internships from
+                        leading companies and take the next
+                        step toward your career.
+
+                    </p>
+
+
+                    <div class="hero-stats">
+
+                        <div>
+
+                            <strong>1000+</strong>
+
+                            <span>
+                                Internships
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>500+</strong>
+
+                            <span>
+                                Companies
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>50K+</strong>
+
+                            <span>
+                                Students
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!--{SEPARATE IMAGE}-->
+
+                <div class="browse-hero-image">
+
+                    <img
+                        src="../assets/how it works .hero.png"
+                        alt="Student browsing internship opportunities">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!--{SEARCH AND FILTERS}-->
+
+        <!--{BROWSE SECTION}-->
+        <section class="browse-section">
+
+            <div class="browse-container">
+
+
+                <div class="browse-title">
+
+                    <div>
+
+                        <h2>
+                            Browse Internships
+                        </h2>
+
+                        <p>
+                            Find opportunities that match
+                            your skills and career goals.
+                        </p>
+
+                    </div>
+
+                    <span class="result-count" id="resultCount" role="status" aria-live="polite">
+                        1000+ opportunities
+                    </span>
+
+                </div>
+
+
+                <!--{SEARCH}-->
+
+                <div class="main-search">
+
+                    <div class="search-input-wrapper">
+
+                        <svg
+                            width="21"
+                            height="21"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+
+                            <circle
+                                cx="11"
+                                cy="11"
+                                r="7">
+                            </circle>
+
+                            <line
+                                x1="16.65"
+                                y1="16.65"
+                                x2="21"
+                                y2="21">
+                            </line>
+
+                        </svg>
+
+                        <input
+                            type="text"
+                            id="internshipSearch"
+                            aria-label="Search internships"
+                            placeholder="Search internships, companies, skills...">
+
+                    </div>
+
+
+                    <button
+                        class="search-main-btn"
+                        id="mainSearchBtn">
+
+                        Search
+
+                    </button>
+
+                </div>
+
+
+                <!--{FILTERS}-->
+
+                <div class="filters">
+
+                    <select id="domainFilter" aria-label="Filter internships by domain">
+
+                        <option value="all">
+                            All Domains
+                        </option>
+
+                        <option value="web">
+                            Web Development
+                        </option>
+
+                        <option value="frontend">
+                            Frontend
+                        </option>
+
+                        <option value="backend">
+                            Backend
+                        </option>
+
+                        <option value="mobile">
+                            Mobile Development
+                        </option>
+
+                        <option value="design">
+                            UI/UX Design
+                        </option>
+
+                        <option value="data">
+                            Data Science
+                        </option>
+
+                    </select>
+
+
+                    <select id="locationFilter" aria-label="Filter internships by location">
+
+                        <option value="all">
+                            All Locations
+                        </option>
+
+                        <option value="remote">
+                            Remote
+                        </option>
+
+                        <option value="bangalore">
+                            Bengaluru
+                        </option>
+
+                        <option value="hyderabad">
+                            Hyderabad
+                        </option>
+
+                        <option value="mumbai">
+                            Mumbai
+                        </option>
+
+                        <option value="pune">
+                            Pune
+                        </option>
+
+                        <option value="cupertino">
+                            Cupertino
+                        </option>
+
+                    </select>
+
+
+
+
+
+                    <select id="typeFilter" aria-label="Filter internships by work mode">
+
+                        <option value="all">
+                            Internship Type
+                        </option>
+
+                        <option value="remote">
+                            Remote
+                        </option>
+
+                        <option value="hybrid">
+                            Hybrid
+                        </option>
+
+                        <option value="onsite">
+                            Onsite
+                        </option>
+
+                    </select>
+
+
+                    <button
+                        class="clear-filter"
+                        id="clearFilters">
+
+                        Clear Filters
+
+                    </button>
+
+                </div>
+
+
+
+                <!--{INTERNSHIP GRID}-->
+
+                <div class="internship-grid" id="internshipGrid" aria-live="polite" aria-busy="true">
+                    <p class="board-status" id="loadingState">Loading internship opportunities…</p>
+                </div>
+
+                <div class="board-error" id="errorState" role="alert" hidden>
+                    <h3>We couldn't load internships</h3>
+                    <p>Please check your connection and try again.</p>
+                    <button type="button" id="retryLoad">Try again</button>
+                </div>
+
+
+                                <!--{NO RESULT}-->
+
+                <div
+                    class="no-results"
+                    id="noResults">
+
+                    <div>
+                        🔎
+                    </div>
+
+                    <h3>
+                        No internships found
+                    </h3>
+
+                    <p>
+                        Try changing your search or filters.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!--{CTA}-->
+        <section class="browse-cta">
+
+            <div>
+
+                <span class="cta-icon">
+                    🚀
+                </span>
+
+                <div>
+
+                    <h2>
+                        Your Next Opportunity Is Waiting
+                    </h2>
+
+                    <p>
+                        Start exploring internships and
+                        build your future today.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button
+                onclick="window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                })">
+
+                Explore More →
+
+            </button>
+
+        </section>
+
+    </main>
+
+
+
+    <!--{SEARCH MODAL}-->
+
+    <div
+        class="search-overlay"
+        id="searchOverlay"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="searchModalHeading">
+
+        <div class="search-panel">
+
+            <button
+                class="close-search"
+                id="closeSearch"
+                type="button"
+                aria-label="Close search">
+
+                ×
+
+            </button>
+
+
+            <span class="search-label">
+                INTERNBOARD SEARCH
+            </span>
+
+
+            <h2 id="searchModalHeading">
+                Find Your Next Opportunity
+            </h2>
+
+
+            <!--{MODAL SEARCH}-->
+            <form class="modal-search" id="modalSearchForm">
+
+                <span>
+                    ⌕
+                </span>
+
+                <input
+                    id="modalSearchInput"
+                    type="text"
+                    aria-label="Search internships, skills, and companies"
+                    placeholder="Search internships, skills, companies...">
+
+                <button class="modal-search-submit" type="submit">
+                    Search
+                </button>
+
+            </form>
+
+
+            <div class="popular-searches">
+
+                <span>
+                    Popular:
+                </span>
+
+                <button>React</button>
+
+                <button>Python</button>
+
+                <button>UI/UX</button>
+
+                <button>Java</button>
+
+                <button>Internships</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--{JAVASCRIPT}-->
+    <script>
+    (() => {
+        "use strict";
+
+        const DATA_URL = "../data/internships.json";
+        const grid = document.getElementById("internshipGrid");
+        const searchInput = document.getElementById("internshipSearch");
+        const domainFilter = document.getElementById("domainFilter");
+        const locationFilter = document.getElementById("locationFilter");
+        const typeFilter = document.getElementById("typeFilter");
+        const resultCount = document.getElementById("resultCount");
+        const noResults = document.getElementById("noResults");
+        const errorState = document.getElementById("errorState");
+        const loadingState = document.getElementById("loadingState");
+        const modal = document.getElementById("searchOverlay");
+        const modalInput = document.getElementById("modalSearchInput");
+        const internships = [];
+
+        const escapeHTML = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({
+            "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;"
+        })[char]);
+
+        const slug = (value) => String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+        function createCard(item) {
+            const skills = Array.isArray(item.skills) ? item.skills : [];
+            const mode = String(item.mode || "Flexible");
+            const location = String(item.location || "Not specified");
+            const domain = String(item.domain || "Other");
+            const searchable = [item.title, domain, location, mode, ...skills].join(" ").toLowerCase();
+            const article = document.createElement("article");
+            article.className = "internship-card";
+            article.dataset.search = searchable;
+            article.dataset.domain = slug(domain);
+            article.dataset.location = slug(location);
+            article.dataset.type = slug(mode);
+            article.innerHTML = `
+                <div class="company-row">
+                    <span class="opportunity-id">${escapeHTML(item.id || "INTERNSHIP")}</span>
+                    <button class="bookmark" type="button" aria-label="Save ${escapeHTML(item.title)}" aria-pressed="false">♡</button>
+                </div>
+                <span class="domain-label">${escapeHTML(domain)}</span>
+                <h3>${escapeHTML(item.title || "Internship Opportunity")}</h3>
+                <p class="company">${escapeHTML(item.company || "Hiring Partner")}</p>
+                <div class="job-meta">
+                    <span>⌖ ${escapeHTML(location)}</span>
+                    <span>◷ ${escapeHTML(mode)}</span>
+                </div>
+                <div class="tags">${skills.map(skill => `<span>${escapeHTML(skill)}</span>`).join("")}</div>
+                <div class="card-bottom">
+                    <span class="stipend">${Number.isFinite(item.openings) ? `${item.openings} opening${item.openings === 1 ? "" : "s"}` : "Applications open"}</span>
+                    <button class="apply-btn" type="button">View &amp; Apply →</button>
+                </div>`;
+            return article;
+        }
+
+        function populateFilters() {
+            const domains = [...new Set(internships.map(item => item.domain).filter(Boolean))].sort();
+            const locations = [...new Set(internships.map(item => item.location).filter(Boolean))].sort();
+            const modes = [...new Set(internships.map(item => item.mode).filter(Boolean))].sort();
+            domainFilter.innerHTML = '<option value="all">All Domains</option>' + domains.map(value => `<option value="${slug(value)}">${escapeHTML(value)}</option>`).join("");
+            locationFilter.innerHTML = '<option value="all">All Locations</option>' + locations.map(value => `<option value="${slug(value)}">${escapeHTML(value)}</option>`).join("");
+            typeFilter.innerHTML = '<option value="all">All Work Modes</option>' + modes.map(value => `<option value="${slug(value)}">${escapeHTML(value)}</option>`).join("");
+        }
+
+        function filterInternships() {
+            const query = searchInput.value.trim().toLowerCase();
+            const domain = domainFilter.value;
+            const location = locationFilter.value;
+            const mode = typeFilter.value;
+            let visible = 0;
+            grid.querySelectorAll(".internship-card").forEach(card => {
+                const matches = (!query || card.dataset.search.includes(query)) &&
+                    (domain === "all" || card.dataset.domain === domain) &&
+                    (location === "all" || card.dataset.location === location) &&
+                    (mode === "all" || card.dataset.type === mode);
+                card.hidden = !matches;
+                if (matches) visible++;
+            });
+            noResults.style.display = visible === 0 ? "block" : "none";
+            resultCount.textContent = `${visible} internship${visible === 1 ? "" : "s"} found`;
+        }
+
+        async function loadInternships() {
+            grid.setAttribute("aria-busy", "true");
+            errorState.hidden = true;
+            loadingState.hidden = false;
+            grid.innerHTML = '<p class="board-status" id="loadingState">Loading internship opportunities…</p>';
+            try {
+                const response = await fetch(DATA_URL, { headers: { Accept: "application/json" } });
+                if (!response.ok) throw new Error(`Dataset request failed (${response.status})`);
+                const payload = await response.json();
+                if (!payload || !Array.isArray(payload.internships)) throw new Error("The internship dataset has an invalid format.");
+                internships.splice(0, internships.length, ...payload.internships);
+                grid.replaceChildren(...internships.map(createCard));
+                populateFilters();
+                noResults.style.display = internships.length ? "none" : "block";
+                resultCount.textContent = `${internships.length} internship${internships.length === 1 ? "" : "s"} available`;
+                if (!internships.length) noResults.style.display = "block";
+            } catch (error) {
+                console.error("Unable to load internship data:", error);
+                grid.replaceChildren();
+                errorState.hidden = false;
+                resultCount.textContent = "Internships unavailable";
+            } finally {
+                grid.setAttribute("aria-busy", "false");
+                const status = document.getElementById("loadingState");
+                if (status) status.remove();
+            }
+        }
+
+        [searchInput, domainFilter, locationFilter, typeFilter].forEach(control => {
+            control.addEventListener(control === searchInput ? "input" : "change", filterInternships);
+        });
+        document.getElementById("mainSearchBtn").addEventListener("click", filterInternships);
+        document.getElementById("clearFilters").addEventListener("click", () => {
+            searchInput.value = "";
+            domainFilter.value = locationFilter.value = typeFilter.value = "all";
+            if (modalInput) modalInput.value = "";
+            filterInternships();
+            searchInput.focus();
+        });
+        document.getElementById("retryLoad").addEventListener("click", loadInternships);
+
+        grid.addEventListener("click", event => {
+            const bookmark = event.target.closest(".bookmark");
+            if (bookmark) {
+                const saved = bookmark.getAttribute("aria-pressed") !== "true";
+                bookmark.setAttribute("aria-pressed", String(saved));
+                bookmark.classList.toggle("saved", saved);
+                bookmark.textContent = saved ? "♥" : "♡";
+                return;
+            }
+            const apply = event.target.closest(".apply-btn");
+            if (apply) {
+                const card = apply.closest(".internship-card");
+                const params = new URLSearchParams({
+                    job: card.querySelector("h3").textContent,
+                    company: card.querySelector(".company").textContent,
+                    location: card.querySelector(".job-meta span:first-child").textContent.replace("⌖", "").trim(),
+                    duration: card.querySelector(".job-meta span:nth-child(2)").textContent.replace("◷", "").trim(),
+                    stipend: card.querySelector(".stipend").textContent,
+                    skills: [...card.querySelectorAll(".tags span")].map(tag => tag.textContent).join(", ")
+                });
+                window.location.href = `Apply.html?${params.toString()}`;
+            }
+        });
+
+        const openSearch = document.getElementById("searchBtn");
+        const closeSearch = document.getElementById("closeSearch");
+        const modalForm = document.getElementById("modalSearchForm");
+        function closeModal() { modal.classList.remove("show"); document.body.style.overflow = ""; }
+        openSearch?.addEventListener("click", () => { modal.classList.add("show"); document.body.style.overflow = "hidden"; modalInput.focus(); });
+        closeSearch?.addEventListener("click", closeModal);
+        modal?.addEventListener("click", event => { if (event.target === modal) closeModal(); });
+        document.addEventListener("keydown", event => { if (event.key === "Escape" && modal?.classList.contains("show")) closeModal(); });
+        modalForm?.addEventListener("submit", event => {
+            event.preventDefault();
+            searchInput.value = modalInput.value;
+            filterInternships();
+            closeModal();
+            document.querySelector(".browse-section").scrollIntoView({ behavior: "smooth" });
+            searchInput.focus();
+        });
+        document.querySelectorAll(".popular-searches button").forEach(button => button.addEventListener("click", () => {
+            modalInput.value = button.textContent.trim();
+            searchInput.value = modalInput.value;
+            filterInternships();
+            closeModal();
+        }));
+        const menuToggle = document.getElementById("mobileMenuToggle");
+        const primaryNavigation = document.getElementById("primaryNavigation");
+        menuToggle?.addEventListener("click", () => {
+            const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+            menuToggle.setAttribute("aria-expanded", String(!expanded));
+            menuToggle.setAttribute("aria-label", expanded ? "Open navigation menu" : "Close navigation menu");
+            primaryNavigation.classList.toggle("mobile-open", !expanded);
+        });
+
+        loadInternships();
+    })();
+    </script>
+    <script src="../functionality/Session.js"></script>
+
+</body>
+
+</html>

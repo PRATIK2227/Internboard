@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--{DOCUMENT METADATA}-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternBoard</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!--{NAVBAR}-->
+    <header class="navbar">
+        <div class="nav_container">
+            <!--{LOGO}-->
+            <a href="home.html" class="logo">
+                <span class="logo-icon">🎓</span>
+                <span>Intern<span>Board</span></span>
+            </a>
+
+            <!--{NAVIGATION}-->
+            <nav class="nav-links">
+                <a href="home.html" class="nav-link active"> Home</a>
+                <a href="Browse.html" class="nav-link"> Browse</a>
+                <a href="About.html" class="nav-link"> About </a>
+                <a href="How_It_Works.html" class="nav-link">How It Works </a>
+                <a href="Contact.html" class="nav-link"> Contact</a>
+                </nav>
+
+
+            <!--{RIGHT NAV}-->
+            <div class="nav-actions">
+
+                <!--{SEARCH BUTTON}-->
+                <button
+                    class="search-button"
+                    id="searchButton"
+                    aria-label="Search internships"
+                    type="button">
+
+                    <svg
+                        width="21"
+                        height="21"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2">
+
+                        <circle cx="11" cy="11" r="7"></circle>
+
+                        <line
+                            x1="16.65"
+                            y1="16.65"
+                            x2="21"
+                            y2="21">
+                        </line>
+
+                    </svg>
+
+                </button>
+
+
+                <button class="login-btn">
+                    Login
+                </button>
+
+                <button class="get-started-btn">
+                    Get Started
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!--{SEARCH PANEL}-->
+
+    <div class="search-overlay" id="searchOverlay">
+
+        <div class="search-panel">
+
+            <div class="search-panel-header">
+
+                <div>
+                    <span class="search-small-label">
+                        INTERNBOARD SEARCH
+                    </span>
+
+                    <h2>
+                        Find Your Next Opportunity
+                    </h2>
+                </div>
+
+                <button
+                    class="close-search"
+                    id="closeSearch"
+                    type="button">
+
+                    ×
+
+                </button>
+
+            </div>
+
+
+            <!--{SEARCH INPUT}-->
+
+            <div class="search-input-wrapper">
+
+                <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2">
+
+                    <circle cx="11" cy="11" r="7"></circle>
+
+                    <line
+                        x1="16.65"
+                        y1="16.65"
+                        x2="21"
+                        y2="21">
+                    </line>
+
+                </svg>
+
+                <input
+                    type="text"
+                    id="internshipSearch"
+                    placeholder="Search internships, skills, companies..."
+                    autocomplete="off">
+
+            </div>
+
+            <div class="search-suggestions" aria-label="Popular searches">
+                <span>Popular:</span>
+                <button type="button">React</button>
+                <button type="button">Python</button>
+                <button type="button">UI/UX</button>
+                <button type="button">Java</button>
+                <button type="button">Internships</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--{HERO SECTION}-->    <main>
+
+        <!--{HERO}-->
+        <section class="hero">
+
+            <div class="hero-container">
+
+
+                <!--{LEFT SIDE}-->
+
+                <div class="hero-content">
+
+                    <div class="hero-badge">
+                        <span>⚡</span>
+                        Find • Apply • Grow
+                    </div>
+
+
+                    <h1>
+                        Your Gateway to
+                        <span>Amazing</span>
+                        Internships
+                    </h1>
+
+
+                    <p class="hero-description">
+                        Discover verified internships, build real skills,
+                        and kickstart your career with top companies.
+                        All in one place.
+                    </p>
+
+
+                    <!--{HERO BUTTONS}-->
+
+                    <div class="hero-buttons">
+
+                        <button
+                            class="primary-btn"
+                            id="exploreBtn">
+
+                            <span>➤</span>
+                            Explore Internships
+
+                        </button>
+
+
+                        <button
+                            class="secondary-btn"
+                            id="watchVideoBtn">
+
+                            <span class="play-icon">
+                                ▶
+                            </span>
+
+                            Watch Video
+
+                        </button>
+
+                    </div>
+
+
+                    <!--{STATS}-->
+
+                    <div class="stats">
+
+                        <div class="stat">
+
+                            <div class="stat-icon #8b5cf6">
+                                💼
+                            </div>
+
+                            <div>
+                                <strong>1000+</strong>
+                                <span>Internships</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <div class="stat-icon #10b981">
+                                👥
+                            </div>
+
+                            <div>
+                                <strong>500+</strong>
+                                <span>Partner Companies</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <div class="stat-icon yellow">
+                                ★
+                            </div>
+
+                            <div>
+                                <strong>50K+</strong>
+                                <span>Students Placed</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!--{RIGHT SIDE}-->
+
+                <div class="hero-visual">
+
+                    <div class="hero-circle"></div>
+
+
+                    <!--{FLOATING CARD}-->
+
+                    <div class="opportunity-card">
+
+                        <h3>
+                            Find Your
+                            <br>
+                            Next Opportunity
+                        </h3>
+
+
+                        <div class="mini-search">
+                            <span>⌕</span>
+                            Search internships...
+                            <span>☷</span>
+                        </div>
+
+
+                        <div class="mini-internship">
+
+                            <div class="mini-company google">
+                                G
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Web Development Intern
+                                </strong>
+
+                                <small>
+                                    Google
+                                </small>
+
+                                <div class="mini-meta">
+                                    🌐 Remote &nbsp; • &nbsp; ⏱ 3 Months
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="mini-internship">
+
+                            <div class="mini-company microsoft">
+                                ⊞
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Frontend Intern
+                                </strong>
+
+                                <small>
+                                    Microsoft
+                                </small>
+
+                                <div class="mini-meta">
+                                    🏢 Hybrid &nbsp; • &nbsp; ⏱ 6 Months
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="mini-internship">
+
+                            <div class="mini-company apple">
+                                
+                            </div>
+
+                            <div>
+                                <strong>
+                                    iOS Development Intern
+                                </strong>
+
+                                <small>
+                                    Apple
+                                </small>
+
+                                <div class="mini-meta">
+                                    🏢 Onsite &nbsp; • &nbsp; ⏱ 6 Months
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            class="view-all-btn"
+                            id="viewAllBtn">
+
+                            View All Internships
+                            →
+                        </button>
+
+                    </div>
+
+
+                    <!--{CHARACTER}-->
+
+                    <div class="character-container">
+
+                        <!--{HERO IMAGE}-->
+
+                        <img
+                            src="../assets/student.png"
+                            alt="Student holding laptop"
+                            class="hero-character">
+
+                    </div>
+
+
+                    <!--{FLOATING INFO}-->
+
+                    <div class="floating-card skills-card">
+
+                        <span class="floating-icon">
+                            ↗
+                        </span>
+
+                        <div>
+                            <strong>
+                                Gain
+                            </strong>
+
+                            <small>
+                                Real-World Skills
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card future-card">
+
+                        <span class="floating-icon">
+                            ▣
+                        </span>
+
+                        <div>
+                            <strong>
+                                Build
+                            </strong>
+
+                            <small>
+                                Your Future
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!--{FEATURES}-->
+        <section class="features">
+
+            <div class="feature-card">
+
+                <div class="feature-icon #22d3ee">
+                    ⌕
+                </div>
+
+                <div>
+                    <h3>
+                        Curated Opportunities
+                    </h3>
+
+                    <p>
+                        Verified internships from
+                        top companies.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon red">
+                    &lt;/&gt;
+                </div>
+
+                <div>
+                    <h3>
+                        Build Real Skills
+                    </h3>
+
+                    <p>
+                        Work on real-world projects
+                        and gain experience.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon #10b981">
+                    👥
+                </div>
+
+                <div>
+                    <h3>
+                        Track Your Progress
+                    </h3>
+
+                    <p>
+                        Manage applications and
+                        showcase your journey.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon #22d3ee">
+                    ▮
+                </div>
+
+                <div>
+                    <h3>
+                        Career Growth
+                    </h3>
+
+                    <p>
+                        Get guidance and resources
+                        to grow faster.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!--{VIDEO MODAL}-->
+
+    <div
+        class="video-modal"
+        id="videoModal">
+
+        <div class="video-box">
+
+            <button
+                class="close-video"
+                id="closeVideo">
+
+                ×
+
+            </button>
+
+            <div class="video-placeholder">
+
+                <div class="video-play">
+                    ▶
+                </div>
+
+                <h2>
+                    Start Your Internship Journey
+                </h2>
+
+                <p>
+                    Find opportunities, build skills
+                    and grow your career with InternBoard.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--{PAGE SCRIPT}-->
+    <script src="../functionality/Home.js"></script>
+    <script src="../functionality/Session.js"></script>
+
+</body>
+
+</html>
